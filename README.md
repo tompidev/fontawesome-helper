@@ -1,3 +1,5 @@
+![](https://tompidev.com/bl-content/uploads/pages/0bee045ef26a63902c2844b8a5c0c1d3/screenshot.png)
+
 ### What is Fontawesome Helper plugin?
 
 FontAwesome Helper is a Bludit plugin which can help for developers quickly review and insert icons into the HTML source.
@@ -9,13 +11,13 @@ On click an icon you get the HTML formatted code of the choosen icon like this:
 
 ### What you get with this plugin?
 
-* more than 650 icon by the core lineawesome.css of Bludit
+* more than 650 icons by the core lineawesome.css file of Bludit
 * clickable icons in a Modal window
-* "one click copy" which help you to copy the HTML formatted icon into the clipboard
+* a "one click copy" feature which will help you to copy the HTML formatted icon code to the clipboard
 
 ### Languages available
 
-Fontawesome Helper contains in this release the following languages:
+Fontawesome Helper contains the following languages in this release:
 
 * English
 * Hungarian
@@ -23,10 +25,10 @@ Fontawesome Helper contains in this release the following languages:
 ### Installing and activating the plugin
 
 * download the package 
-* unzip it to a folder located on your local PC
-* upload the **fontawesome-helper** folder into bl-plugins folder on your website
+* unzip into a folder located on your local PC
+* upload the **fontawesome-helper** folder into **bl-plugins** folder on your website
 
-After successfully upload...
+**After successfully upload...**
 
 To using the plugin you have to activate it on the **Settings / Plugins** page on admin area of your website.
 
