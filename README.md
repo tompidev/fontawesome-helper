@@ -45,6 +45,6 @@ If you find my scripts helpful please support my work and Buy Me a Coffe.
 
 All small support can help me and give me power and insiration to create more useful scripts. 
 
-**Thank you very much!**
-
 ### [Buy Me a Coffee...](https://www.buymeacoffee.com/tompidev)
+
+**Thank you very much!**
