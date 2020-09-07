@@ -1,0 +1,7 @@
+{
+	"plugin-data":
+	{
+		"name": "FontAwesome Helper",
+		"description": "This plugin helps developers to display Bludit core or 3rd party FontAwesome icons and paste them into the source code"
+	}
+}

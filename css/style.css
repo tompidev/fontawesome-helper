@@ -1,0 +1,83 @@
+span.code-copy {
+    float: right;
+    margin-right: 5px;
+    font-size: 20px;
+    color: #555657;
+  }
+  span.code-copy:hover {
+    cursor: pointer;
+  }
+  .language-html{
+      position: absolute;
+      left: 10px;
+      top: 15px;
+      font-size: 1.3em;
+      background-color: transparent;
+      color: #007BFF;
+  }
+  .code-copy i{
+      opacity: 0.3;
+      font-size: 1.5em;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+  }
+  pre{
+      margin: unset;
+  }
+  pre:hover span.code-copy i{
+      opacity: 0.9;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+  }
+  .fa-helper-icon{
+      width: 100px;
+      cursor: pointer;
+  }
+  .fa-helper-icon:hover {
+    transform: scale(1.75);
+    color: #007BFF;
+    background-color: #f0f0f0;
+  }
+  .fa-helper-title{
+      font-size: 8px;
+      text-align: center;
+  }
+
+/* Alert when Code copied to clipboard */
+.notify{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,.6);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: height .2s;
+    z-index: 1001;
+}
+.notifyactive{
+    height: 60px;
+}
+#notifyType:before{
+    display: block;
+    margin-top: 15px;
+}
+.success:before{
+    font-size: 1.25em;
+    Content: "Code copied to clipboard";
+}
+
+/* Bootstrap override */
+.modal-header .close{
+    position: absolute;
+    right: 10px;
+    margin: 0 !important;
+}
