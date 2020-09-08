@@ -8,7 +8,7 @@
  *  @license        :  MIT
  *
  *  @last-modified  :  2020-09-07 21:08:15 CET
- *  @release        :  1.0.2
+ *  @release        :  1.0.3
  **/
 
 class pluginFontAwesomeHelper extends Plugin
@@ -17,9 +17,7 @@ class pluginFontAwesomeHelper extends Plugin
 	public function init()
 	{
 		$this->dbFields = array(
-			'faOnSidebar' => true,
-			'methodOfUse' => '',
-			'faScriptSource' => 'bludit'
+			'faOnSidebar' => true
 		);
 	}
 
