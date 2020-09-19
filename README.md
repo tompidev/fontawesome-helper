@@ -14,6 +14,8 @@ On click an icon you get the HTML formatted code of the choosen icon like this:
 * more than 650 icons by the core lineawesome.css file of Bludit
 * clickable icons in a Modal window
 * a "one click copy" feature which will help you to copy the HTML formatted icon code to the clipboard
+* :new: search box to find an icon
+* :new: icon size chooser
 
 ### Languages available
 
