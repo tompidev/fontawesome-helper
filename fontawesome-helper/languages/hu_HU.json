@@ -15,5 +15,8 @@
     "both-mode": "<strong>MINDKETTŐ MÓD:</strong> Ebben a módban a fejlesztőknek és a felhasználóknak is segít a plugin",
     "select-fontawesome-script-source-either-bludit-or-bootstrap-cdn": "A FontAwesome forrásának kiválasztása. Bludit alapértelmezett, vagy a Bootstrap CND forrásból",
     "open-showroom": "Bemutató megnyitása",
-    "copy-code-to-clipboard": "Kód másolása a vágólapra"
+    "copy-code-to-clipboard": "Kód másolása a vágólapra",
+    "clean": "Törlés",
+    "default": "Alap",
+    "type-to-search-icons": "Ikonok kereséséhez kezd el gépelni"
 }

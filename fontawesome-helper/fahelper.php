@@ -18,7 +18,7 @@ foreach ($contents[1] as $content) {
 
 <div class="container">
 	<div class="row">
-		<div class="col-xs-1-12">
+		<div id="faContainer" class="col-xs-1-12">
 
 
 			<?php
@@ -41,21 +41,60 @@ foreach ($contents[1] as $content) {
 		new ClipboardJS("#codeCopy");
 
 		/*
-		 * Create html formatted code from icon name and put into the code block when user click any icon on the list
+		 * Create html formatted code from icon name and put into the code block when user clicks any icon on the list
 		 */
 		$('i[data-name="fa-helper-icon"]').click(function(e) {
 			var title = $(this).attr('data-icon');
-			var id = $(this).attr("id");
-			$("#code").html("&lt;i class=\"fa " + title + "\"&gt;&lt;/i&gt;");
+			var size = $('input[name="faIconSize"]:checked').val();
+			if (size > 1) {
+				var faCode = "&lt;i class=\"fa fa-" + size + "x " + title + "\"&gt;&lt;/i&gt;";
+			} else {
+				var faCode = "&lt;i class=\"fa " + title + "\"&gt;&lt;/i&gt;";
+			}
+			$("#code").html(faCode);
 			$(".code-copy").removeClass("d-none");
 		});
 
 		/*
-		 * Empty modal 'code' block and hide copy button again when modal window closed
+		 * Setting icon size and append into the html formatted code above
+		 */
+		$('input[name="faIconSize"]').click(function() {
+			var size = this.value;
+			var code = $("#code").html();
+			var regex = /fa\sfa-+?.x/g;
+			if (regex.test(code)) {
+				if (size > 1) {
+					var faSize = code.replace(regex, "fa fa-" + size + "x");
+				} else {
+					var faSize = code.replace(regex, "fa");
+				}
+			} else if (size > 1) {
+				var regex = /fa\s/g;
+				var faSize = code.replace(regex, "fa fa-" + size + "x ");
+			}
+			$("#code").html(faSize);
+		});
+
+		/*
+		 * Empty code block, hide copy button and set icon size radio buttons to unchecked on click Reset button
+		 */
+		$('#resetBtn').click(function() {
+			$("#code").html("");
+			$(".code-copy").addClass("d-none");
+			$('input[name="faIconSize"]').prop("checked", false);
+			$('#faIconSize1').prop("checked", true);
+			$("#searchFaIcon").val("");
+		});
+
+		/*
+		 * Empty modal's 'inputs' and hide copy button again when modal window closed
 		 */
 		$("#faModal").on("hidden.bs.modal", function() {
 			$("#code").html("");
+			$("#searchFaIcon").val("");
 			$(".code-copy").addClass("d-none");
+			$('input[name="faIconSize"]').prop("checked", false);
+			$('#faIconSize1').prop("checked", true);
 		});
 
 		/*
@@ -72,5 +111,14 @@ foreach ($contents[1] as $content) {
 				}, 2000);
 			});
 		});
-	})
+
+		// search icons
+		$("#searchFaIcon").on("keyup", function() {
+			var value = $(this).val().toLowerCase();
+			$("#faContainer *").filter(function() {
+				$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+			});
+		});
+
+	});
 </script>

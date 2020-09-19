@@ -1,19 +1,26 @@
 span.code-copy {
-    float: right;
-    margin-right: 5px;
+    position: absolute;
+    left: 0;
     font-size: 20px;
     color: #555657;
+    height: 100%;
+    width: 55px;
   }
   span.code-copy:hover {
     cursor: pointer;
   }
   .language-html{
       position: absolute;
-      left: 10px;
-      top: 15px;
+      left: 60px;
+      top: 12px;
       font-size: 1.3em;
       background-color: transparent;
       color: #007BFF;
+  }
+  .reset-button{
+      position: absolute;
+      right: 0;
+      height: 100%;
   }
   .code-copy i{
       opacity: 0.3;
@@ -25,6 +32,7 @@ span.code-copy {
   }
   pre{
       margin: unset;
+      width: 100%;
   }
   pre:hover span.code-copy i{
       opacity: 0.9;
@@ -38,13 +46,25 @@ span.code-copy {
       cursor: pointer;
   }
   .fa-helper-icon:hover {
-    transform: scale(1.75);
+    transform: scale(1.5);
     color: #007BFF;
     background-color: #f0f0f0;
   }
   .fa-helper-title{
       font-size: 8px;
       text-align: center;
+  }
+  .td-input-group{
+      height: 45px;
+  }
+  .td-input-group-text{
+      background-color: #cfe9ff;
+      padding: 0 10px;
+  }
+  #searchFaIcon{
+      height: 100%;
+      padding-left: 20px;
+      width: 125px;
   }
 
 /* Alert when Code copied to clipboard */
