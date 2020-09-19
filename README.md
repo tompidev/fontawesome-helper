@@ -1,4 +1,4 @@
-![](https://tompidev.com/bl-content/uploads/pages/0bee045ef26a63902c2844b8a5c0c1d3/capture-3.png)
+![](https://tompidev.com/bl-content/uploads/pages/0bee045ef26a63902c2844b8a5c0c1d3/screenshot.png)
 
 ### What is Fontawesome Helper plugin?
 
