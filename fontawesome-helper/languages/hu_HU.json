@@ -6,17 +6,9 @@
     },
     "show-or-hide-fa-helper-menuitem-on-sidebar": "A FA kisegítő menüpontjának megjelenítése vagy elrejtése az oldalsávon",
     "show-or-hide-on-sidebar": "Menüpont megjelenítése vagy elrejtése",
-    "development": "Fejlesztői mód",
-    "frontend": "Felhasználói mód",
-    "both": "Mindkettő",
-    "method-of-use": "Felhasználási mód",
-    "development-mode": "<strong>FEJLESZTŐI MÓD:</strong> Ez a mód a fejlesztőknek segít az egyes ikonok html formázott változatát gyorsan megszerezni.",
-    "user-mode": "<strong>FELHASZNÁLÓI MÓD:</strong> Ez a mód a felhasználóknak segít az egyes ikonok beillesztésében a bejegyzés szerkesztése oldalon. A ikon egy kattintásra beilleszthető a bejegyzésbe/cikkbe.",
-    "both-mode": "<strong>MINDKETTŐ MÓD:</strong> Ebben a módban a fejlesztőknek és a felhasználóknak is segít a plugin",
-    "select-fontawesome-script-source-either-bludit-or-bootstrap-cdn": "A FontAwesome forrásának kiválasztása. Bludit alapértelmezett, vagy a Bootstrap CND forrásból",
     "open-showroom": "Bemutató megnyitása",
     "copy-code-to-clipboard": "Kód másolása a vágólapra",
     "clean": "Törlés",
     "default": "Alap",
-    "type-to-search-icons": "Ikonok kereséséhez kezd el gépelni"
+    "type-to-search-icons": "Ikonok kereséséhez kezdj el gépelni"
 }

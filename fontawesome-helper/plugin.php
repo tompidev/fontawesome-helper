@@ -7,8 +7,8 @@
  *  @email          :  support@tompidev.com
  *  @license        :  MIT
  *
- *  @last-modified  :  2020-09-19 13:54:12 CET
- *  @release        :  1.0.4
+ *  @last-modified  :  2021-03-20 14:34:23 CET
+ *  @release        :  1.0.5
  **/
 
 class pluginFontAwesomeHelper extends Plugin
