@@ -1,5 +1,12 @@
 <?php
-$pluginDir = $_SERVER["REQUEST_SCHEME"] . '://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']);
+if ( (! empty($_SERVER['REQUEST_SCHEME']) && $_SERVER['REQUEST_SCHEME'] == 'https') ||
+     (! empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ||
+     (! empty($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == '443') ) {
+    $server_request_scheme = 'https';
+} else {
+    $server_request_scheme = 'http';
+}
+$pluginDir = $server_request_scheme . '://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']);
 
 $clipboardJs = $pluginDir . '/clipboard.min.js';
 $facss = $pluginDir . '/css/line-awesome/css/line-awesome-font-awesome.min.css';

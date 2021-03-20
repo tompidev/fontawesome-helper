@@ -1,0 +1,14 @@
+{
+	"plugin-data":
+	{
+		"name": "FontAwesome Helper",
+		"description": "Ce plug-in aide les développeurs à afficher et à insérer les icônes FontAwesome (LineAwesome) par défaut de Bludit dans le code source."
+    },
+    "show-or-hide-fa-helper-menuitem-on-sidebar": "Afficher ou masquer l'élément de menu FA helper sur la barre latérale",
+    "show-or-hide-on-sidebar": "Afficher ou masquer un élément de menu",
+    "open-showroom": "Ouvrir la liste",
+    "copy-code-to-clipboard": "Copier le code dans le presse-papiers",
+    "clean": "Purger",
+    "default": "Par défaut",
+    "type-to-search-icons": "Commencez à taper pour rechercher des icônes"
+}
