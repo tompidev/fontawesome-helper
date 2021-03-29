@@ -7,8 +7,8 @@
  *  @email          :  support@tompidev.com
  *  @license        :  MIT
  *
- *  @last-modified  :  2021-03-20 14:34:23 CET
- *  @release        :  1.0.5
+ *  @last-modified  :  2021-03-29 19:02:54 CET
+ *  @release        :  1.0.6
  **/
 
 class pluginFontAwesomeHelper extends Plugin
@@ -47,17 +47,17 @@ class pluginFontAwesomeHelper extends Plugin
 		*/
 		$html .= '<a id="loadFaModal" class="btn btn-info btn-lg mt-4 text-white" data-toggle="modal" data-target="#faModal" role="button">' . $L->get('Open showroom') . '</a>';
 
-		/*
-		* Displaying the plugin version
+			/*
+		* App footer for plugin version and developer's urls
 		*/
 		$html .= PHP_EOL . '<div class="text-center pt-3 mt-4 border-top text-muted">' . PHP_EOL;
 		$html .= $this->name() . ' - v' . $this->version() . ' @ ' . date('Y') . ' by ' .  $this->author() . PHP_EOL;
 		$html .= '</div>' . PHP_EOL;
 		$html .= '<div class="text-center">' . PHP_EOL;
-		$html .= '<a class="fa fa-2x fa-globe" href="' . $this->website() . '" target="_blank" title="Visit TompiDev\'s Website"></a>' . PHP_EOL;
-		$html .= '<a class="fa fa-2x fa-github" href="' . $site->github() . '" target="_blank" title="Visit TompiDev on Github"></a>' . PHP_EOL;
-		$html .= '<a class="fa fa-2x fa-twitter" href="' . $site->twitter() . '" target="_blank" title="Visit TompiDev on Twitter"></a>' . PHP_EOL;
-		$html .= '<a class="fa fa-2x fa-envelope" href="mailto:' . $this->email() . '?subject=Question%20about%20' . $this->name() . '" title="Send me an email"></a>' . PHP_EOL;
+		$html .= '<a class="fa fa-2x fa-globe" href="https://www.tompidev.com/" target="_blank" title="Visit TompiDev\'s Website"></a>' . PHP_EOL;
+		$html .= '<a class="fa fa-2x fa-github" href="https://www.github.com/tompidev" target="_blank" title="Visit TompiDev on Github"></a>' . PHP_EOL;
+		$html .= '<a class="fa fa-2x fa-twitter" href="https://www.twitter.com/tompidev" target="_blank" title="Visit TompiDev on Twitter"></a>' . PHP_EOL;
+		$html .= '<a class="fa fa-2x fa-envelope" href="mailto:support@tompidev.com/?subject=Question%20about%20' . $this->name() . '" title="Send me an email"></a>' . PHP_EOL;
 		$html .= '<a class="fa fa-2x fa-cubes" href="https://www.tompidev.com/fontawesome-helper" target="_blank" title="Plugin\'s website on tompidev.com"></a>' . PHP_EOL;
 		$html .= '</div>' . PHP_EOL;
 
