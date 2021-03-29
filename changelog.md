@@ -1,5 +1,9 @@
 ## Fontawesome Helper Plugin Changelog
 
+#### v1.0.6 (29-3-2021)
+
+* Correct footer URLs
+
 #### v1.0.5 (20-3-2021)
 
 * Some bug fixes
