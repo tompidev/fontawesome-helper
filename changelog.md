@@ -1,5 +1,21 @@
 ## Fontawesome Helper Plugin Changelog
 
+#### v1.0.7 (09-7-2021)
+
+##### Improvements:
+
+* Building the plugin update system
+
+##### Fixes
+
+* updated search plugin (freezing issue fix)
+* bug fixes
+
+##### Design
+
+* Release notes modal window corrections
+* some other design corrections
+
 #### v1.0.6 (29-3-2021)
 
 * Correct footer URLs
