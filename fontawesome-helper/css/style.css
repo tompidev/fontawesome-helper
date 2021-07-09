@@ -61,10 +61,10 @@ span.code-copy {
       background-color: #cfe9ff;
       padding: 0 10px;
   }
-  #searchFaIcon{
+ .faIconSearch{
       height: 100%;
-      padding-left: 20px;
-      width: 125px;
+      padding-left: 20px !important;
+      width: 125px !important;
   }
 
 /* Alert when Code copied to clipboard */
