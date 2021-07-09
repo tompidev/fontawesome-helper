@@ -4,11 +4,28 @@
 		"name": "FontAwesome Helper",
 		"description": "Ce plug-in aide les développeurs à afficher et à insérer les icônes FontAwesome (LineAwesome) par défaut de Bludit dans le code source."
     },
-    "show-or-hide-fa-helper-menuitem-on-sidebar": "Afficher ou masquer l'élément de menu FA helper sur la barre latérale",
-    "show-or-hide-on-sidebar": "Afficher ou masquer un élément de menu",
-    "open-showroom": "Ouvrir la liste",
-    "copy-code-to-clipboard": "Copier le code dans le presse-papiers",
-    "clean": "Purger",
-    "default": "Par défaut",
-    "type-to-search-icons": "Commencez à taper pour rechercher des icônes"
+    "fa-show-or-hide-fa-helper-menuitem-on-sidebar": "Afficher ou masquer l'élément de menu FA helper sur la barre latérale",
+    "fa-show-or-hide-on-sidebar": "Afficher ou masquer un élément de menu",
+    "fa-open-showroom": "Ouvrir la liste",
+    "fa-copy-code-to-clipboard": "Copier le code dans le presse-papiers",
+    "fa-clean": "Purger",
+    "fa-default": "Par défaut",
+    "fa-type-to-search-icons": "Commencez à taper pour rechercher des icônes",
+    "fa-open-settings-page-of-fontawesome-helper-plugin": "Open FontAwesome plugin settings page",
+
+    "__This is only info, do not translate it!__":"",
+
+    "release-notes": "Release notes",
+    "package": "Package",
+    "current-version": "Current version",
+    "new-version": "New version",
+    "release-date": "Release date",
+    "what-is-new-in-this-release": "What's new in this version",
+    "download-release": "Download",
+    "changelog": "Changelog",
+    "useful-links": "Useful links",
+    "try-tompidev-plugins-and-themes-for-free": "Try TompiDev plugins and themes for FREE!",
+    "all-plugins-and-themes-from-tompidev": "All plugins and themes from TompiDev"
+  }
+
 }

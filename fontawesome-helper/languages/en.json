@@ -3,5 +3,29 @@
 	{
 		"name": "FontAwesome Helper",
 		"description": "This plugin helps developers to display Bludit core or 3rd party FontAwesome icons and paste them into the source code"
-	}
+	},
+	"fa-new-release-warning": "New update available, please update the plugin!",
+	"fa-learn-more": "Learn more",
+	"fa-show-or-hide-fa-helper-menuitem-on-sidebar": "Show or hide FA Helper menuitem on sidebar",
+	"fa-show-or-hide-on-sidebar": "Show or hide on sidebar",
+	"fa-open-showroom": "Open showroom",
+	"fa-copy-code-to-clipboard": "Copy code to Clipboard",
+	"fa-clean": "Clean",
+	"fa-default": "Default",
+	"fa-type-to-search-icons": "Type to search icons",
+	"fa-open-settings-page-of-fontawesome-helper-plugin": "Open FontAwesome plugin settings page",
+
+	"__This is only info, do not translate it!__":"",
+
+	"release-notes": "Release notes",
+	"package": "Package",
+	"current-version": "Current version",
+	"new-version": "New version",
+	"release-date": "Release date",
+	"what-is-new-in-this-release": "What's new in this version",
+	"download-release": "Download",
+	"changelog": "Changelog",
+	"useful-links": "Useful links",
+	"try-tompidev-plugins-and-themes-for-free": "Try TompiDev plugins and themes for FREE!",
+	"all-plugins-and-themes-from-tompidev": "All plugins and themes from TompiDev"
 }

@@ -4,11 +4,28 @@
 		"name": "FontAwesome Helper",
 		"description": "Ez a plugin segít a fejlesztőknek a Bludit alapértelmezett FontAwesome (LineAwesome) ikonok megjelenítésében és a forráskódba való beillesztésében"
     },
-    "show-or-hide-fa-helper-menuitem-on-sidebar": "A FA kisegítő menüpontjának megjelenítése vagy elrejtése az oldalsávon",
-    "show-or-hide-on-sidebar": "Menüpont megjelenítése vagy elrejtése",
-    "open-showroom": "Bemutató megnyitása",
-    "copy-code-to-clipboard": "Kód másolása a vágólapra",
-    "clean": "Törlés",
-    "default": "Alap",
-    "type-to-search-icons": "Ikonok kereséséhez kezdj el gépelni"
+    "fa-new-release-warning": "Új frissítés érhető el, kérlek frissítds a plugint!",
+    "fa-learn-more": "Tudj meg többet",
+    "fa-show-or-hide-fa-helper-menuitem-on-sidebar": "A FA kisegítő menüpontjának megjelenítése vagy elrejtése az oldalsávon",
+    "fa-show-or-hide-on-sidebar": "Menüpont megjelenítése vagy elrejtése",
+    "fa-open-showroom": "Bemutató megnyitása",
+    "fa-copy-code-to-clipboard": "Kód másolása a vágólapra",
+    "fa-clean": "Törlés",
+    "fa-default": "Alap",
+    "fa-type-to-search-icons": "Ikonok kereséséhez kezdj el gépelni",
+    "fa-open-settings-page-of-fontawesome-helper-plugin": "A FontAwesome plugin beállítások oldal megnyitása",
+
+    "__This is only info, do not translate it!__":"",
+
+    "release-notes": "Kiadási jegyzék",
+    "package": "Csomag",
+    "current-version": "Aktuális verzió",
+    "new-version": "Új verzió",
+    "release-date": "Kiadás dátuma",
+    "what-is-new-in-this-release": "Mik az újdonságok ebben a verzióban",
+    "download-release": "Letöltés",
+    "changelog": "Változás napló",
+    "useful-links": "Hasznos linkek",
+    "try-tompidev-plugins-and-themes-for-free": "Próbáld ki a Tompidev kiegészítőket és témákat INGYEN!",
+    "all-plugins-and-themes-from-tompidev": "Az összes Tompidev kiegészítő és téma"
 }
