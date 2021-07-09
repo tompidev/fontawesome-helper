@@ -23,22 +23,15 @@ foreach ($contents[1] as $content) {
 }
 ?>
 
-<div class="container">
-	<div class="row">
-		<div id="faContainer" class="col-xs-1-12">
-
-
 			<?php
 			$id = 0;
 			foreach ($class[1] as $fa) {
 				$id = ++$id;
-				echo "<i id='$cont[$id]' class='fa-icon fa-helper-icon m-1 p-2 text-center border rounded-sm fa fa-3x $fa' data-name='fa-helper-icon' data-icon='$fa'><div class='fa-helper-title'>$fa</div></i>";
+				$iconName = substr($fa, 3); // getting the icon name without the 'fa-' prefix
+				echo "<i id='$cont[$id]' class='fa-icon fa-helper-icon m-1 p-lg-2 text-center border rounded-sm fa fa-3x $fa' data-name='fa-helper-icon' data-icon='$fa' data-iconname='$iconName'><div class='fa-helper-title'>$fa</div></i>";
 			}
 			?>
 
-		</div>
-	</div>
-</div>
 <script>
 	$(document).ready(function() {
 
@@ -54,10 +47,13 @@ foreach ($contents[1] as $content) {
 			var title = $(this).attr('data-icon');
 			var size = $('input[name="faIconSize"]:checked').val();
 			if (size > 1) {
+				var faClass = "fa-" + size + "x " + title;
 				var faCode = "&lt;i class=\"fa fa-" + size + "x " + title + "\"&gt;&lt;/i&gt;";
 			} else {
+				var faClass = "fa fa-5x " + title;
 				var faCode = "&lt;i class=\"fa " + title + "\"&gt;&lt;/i&gt;";
 			}
+			// $("#faSample i").switchClass(faClass);
 			$("#code").html(faCode);
 			$(".code-copy").removeClass("d-none");
 		});
@@ -90,7 +86,7 @@ foreach ($contents[1] as $content) {
 			$(".code-copy").addClass("d-none");
 			$('input[name="faIconSize"]').prop("checked", false);
 			$('#faIconSize1').prop("checked", true);
-			$("#searchFaIcon").val("");
+			// $("#faIconSearch").val("");
 		});
 
 		/*
@@ -98,7 +94,7 @@ foreach ($contents[1] as $content) {
 		 */
 		$("#faModal").on("hidden.bs.modal", function() {
 			$("#code").html("");
-			$("#searchFaIcon").val("");
+			$("#faIconSearch").val("");
 			$(".code-copy").addClass("d-none");
 			$('input[name="faIconSize"]').prop("checked", false);
 			$('#faIconSize1').prop("checked", true);
@@ -120,12 +116,27 @@ foreach ($contents[1] as $content) {
 		});
 
 		// search icons
-		$("#searchFaIcon").on("keyup", function() {
-			var value = $(this).val().toLowerCase();
-			$("#faContainer *").filter(function() {
-				$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		// get input field and add 'keyup' event listener
+		let searchInput = document.querySelector('#faIconSearch');
+		// let searchInput = document.querySelector('#searchFaIcon');
+		searchInput.addEventListener('keyup', search);
+
+		// get all elements with data-iconname attribute
+		let data = document.querySelectorAll('[data-iconname]');
+		let searchTerm = '';
+		let name = '';
+
+		function search(e) {
+			// get input fieled value and change it to lower case
+			searchTerm = e.target.value.toLowerCase();
+
+			data.forEach((elem) => {
+				// navigate to p in the title, get its value and change it to lower case
+				name = elem.textContent.toLowerCase();
+				// if search term not in the title's title hide the title. otherwise, show it.
+				name.includes(searchTerm) ? elem.style.display = '' : elem.style.display = 'none';
 			});
-		});
+		}
 
 	});
 </script>
